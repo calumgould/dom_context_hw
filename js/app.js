@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const newActorForm = document.querySelector('.new-actor-form');
   newActorForm.addEventListener('submit', handleFormSubmit);
+
+  const deleteAllButton = document.querySelector('#delete-all');
+  deleteAllButton.addEventListener('click', handleDeleteAllClick)
 });
 
 const handleFormSubmit = (event) => {
@@ -36,6 +39,11 @@ const createActorListItem = function (form) {
 
   return actorListItem;
 };
+
+const handleDeleteAllClick = function (event) {
+  const actorList = document.querySelector('.actor-list');
+  actorList.innerHTML = '';
+}
 
 // GENERATE ELEMENT FUNCTION FOR REFACTOR //
 // const generateElement = (container, tag, content, classes = []) => {
