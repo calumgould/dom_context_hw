@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  padding: 0.5em 0;
+  font-size: 3em;
+}
+
+.new-actor-form {
+  text-align: center
+}
+
+.form-item label {
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+.form-item input, .form-item select {
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+
+.save-button, #delete-all {
+  padding: 1em 2em;
+  font-size: 1em;
+  border-radius: 2em;
+  margin: 1em 0;
+}
+
+.save-button {
+  background-color: #8CC63E;
+  color: white;
+}
+
+.save-button:hover {
+  opacity: 85%;
+}
+
+#delete-all {
+  background-color: #E02923;
+  color: white;
+}
+
+#delete-all:hover {
+  opacity: 85%;
+}
+
+h2, h3, h4 {
+  font-size: 1.5em;
+  padding: 0.3em 0;
+}
+
+.list-container {
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 2em;
+}
+
+li {
+  background-color: #FAA12D;
+  width: 20%;
+  height: auto;
+  padding: 2em;
+  list-style: none;
+  margin: 0.5em;
+}
