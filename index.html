@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Favourite Actors</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="js/app.js"></script>
+  </head>
+  <body>
+
+    <form class="new-actor-form">
+      <div class="form-wrapper">
+        <div class="form-item">
+          <label for="name">Actor Name:</label>
+          <input type="text" class="actor-name" required>
+        </div>
+
+        <div class="form-item">
+          <label for="films">Favourite Films:</label>
+          <input type="text" class="film-list" required>
+        </div>
+
+        <div class="form-item">
+          <label for="gender">Gender:</label>
+          <select class="gender-dropdown" required>
+            <option value="" disabled selected></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+
+      </div>
+      <input type="submit" value="Save">
+    </form>
+
+    <h2>Actor List:</h2>
+    <ul class="actor-list"></ul>
+
+  </body>
+</html>
